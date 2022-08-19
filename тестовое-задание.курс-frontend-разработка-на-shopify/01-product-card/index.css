@@ -29,6 +29,7 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
     width: 380px;
@@ -82,7 +83,7 @@
     width: 332px;
     height: 48px;
     position: absolute;
-    margin-top: 410px;
+    top: 410px;
     border: 2px solid #42940F;
     border-radius: 8px; 
 }
@@ -104,3 +105,43 @@
     pointer-events: none;
 }
 
+/* Мобилка */
+
+@media (max-width:426px){
+    .center {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .products__heading {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .products {
+        height: 100%;
+    }
+    .card {
+        width: 284px;
+        height: 380px;
+    }
+    .card__img {
+        width: 284px;
+        height: auto;
+    }
+    .card__info {
+        width: 236px;
+    }
+    .card__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .card__button {
+        width: 236px;
+        height: 48px;
+        top: 320px;
+    }
+}
